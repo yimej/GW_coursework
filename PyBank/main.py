@@ -12,15 +12,8 @@ while again == "y":
         budget_list = list(csv.reader(csvfile, delimiter=","))
         
         numOfMonths = len(budget_list)
-        revenue = 0
-        revChange = 0
-        totalRevChange = 0
-        aveRevChange = 0
-        lastChange = 0
-        maxChange = 0
-        minChange = 0
-        maxDate = ""
-        minDate = ""
+        revenue, revChange, totalRevChange, aveRevChange, lastChange, maxChange, minChange = 0, 0, 0, 0, 0, 0, 0
+        maxDate, minDate = "", ""
 
         for i in range(1,(numOfMonths - 1)):
             revenue = revenue + int(budget_list[i][1])
@@ -47,7 +40,7 @@ while again == "y":
     print("Greatest Decrease in Revenue: " + str(minDate) + " ($" + str(minChange) + ")")
     print("----------------------------------------------------------")
 
-    output = open("results.txt","a+")
+    output = open("results.txt","w+")
     output.write("Financial Analysis: " + file)
     output.write("\nTotal Months: " + str(numOfMonths))
     output.write("\nTotal Revenue: " + str(revenue))
