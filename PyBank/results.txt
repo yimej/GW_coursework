@@ -1,0 +1,6 @@
+Financial Analysis: budget_data_2.csv
+Total Months: 87
+Total Revenue: 36536422
+Average Revenue Change: $-5818.402298850575
+Greatest Increase in Revenue: Feb-2016 ($81651)
+Greatest Decrease in Revenue: Jan-2016 ($-433737)
