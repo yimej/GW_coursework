@@ -1,0 +1,3 @@
+Higher priced items generated more revenue than popular items.
+The youngest and oldest players spent the most money.
+The age group with the most players (20 to 24) spent the least per person (normalized total).
